@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  email_db:
+    image: postgres:16
+    container_name: email_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${EMAIL_DB_USER}
+      POSTGRES_PASSWORD: ${EMAIL_DB_PASSWORD}
+      POSTGRES_DB: ${EMAIL_DB_NAME}
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./email_data:/var/lib/postgresql/data
