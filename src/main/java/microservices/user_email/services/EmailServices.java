@@ -49,7 +49,7 @@ public class EmailServices {
         }finally {
             return emailRepository.save(emailModel);
         }
-        
+
     }
 
 
