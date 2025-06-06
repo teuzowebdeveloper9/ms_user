@@ -10,7 +10,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "emails")
-public class EmailModels  implements Serializable {
+public class EmailModel implements Serializable {
     private static  final  long SerialVersionUID = 1L;
 
 
